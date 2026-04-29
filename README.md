@@ -2,7 +2,7 @@
 
 This repository contains tools I’m building to analyze system behavior and explore how AI-generated responses can be evaluated and improved.
 
-The goal is to keep things simple and practical and focusing on real world use cases like log analysis, incident insights, and basic anomaly detection.
+The goal is to keep things simple and practical, focusing on real-world use cases like log analysis, incident insights, and basic anomaly detection.
 
 ## Why I’m Building This
 
@@ -14,9 +14,10 @@ This project is where those two areas come together.
 
 ## What’s Included (So Far)
 
-* Log analysis (errors, warnings, timeouts)
-* Basic system health insights
-* Early exploration of AI/LLM evaluation
+*Log analysis (errors, warnings, timeouts)
+*Basic system health insights
+*Simple anomaly detection
+*Early exploration of evaluating AI/LLM responses
 
 ## What I’m Working On Next
 
