@@ -14,16 +14,16 @@ This project is where those two areas come together.
 
 ## What’s Included (So Far)
 
-*Log analysis (errors, warnings, timeouts)
-*Basic system health insights
-*Simple anomaly detection
-*Early exploration of evaluating AI/LLM responses
+- Log analysis (errors, warnings, timeouts)
+- Basic system health insights
+- Simple anomaly detection
+- Early exploration of evaluating AI/LLM responses
 
 ## What I’m Working On Next
 
-* Improving log analysis with better pattern detection
-* Adding simple anomaly detection
-* Exploring ways to evaluate AI-generated responses
+- Improving log analysis with better pattern detection
+- Adding simple anomaly detection
+- Exploring ways to evaluate AI-generated responses
 
 ## Tech Stack
 
@@ -32,3 +32,21 @@ Python (for now — keeping it simple)
 ## Notes
 
 This is an evolving project: I’m building it step by step and keeping things as practical as possible.
+
+## 📦 Example Output
+
+```
+Log Analysis Result:
+Errors: 1
+Warnings: 1
+Timeouts: 1
+
+System Summary:
+Status: Minor issues
+Details: 1 errors, 1 warnings, 1 timeouts
+Health Score: 90
+
+Anomaly Detection:
+Status: No major anomalies
+System behavior looks normal
+```
