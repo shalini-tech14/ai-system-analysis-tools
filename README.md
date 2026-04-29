@@ -31,4 +31,4 @@ Python (for now — keeping it simple)
 
 ## Notes
 
-This is an evolving project — I’m building it step by step and keeping things as practical as possible.
+This is an evolving project: I’m building it step by step and keeping things as practical as possible.
