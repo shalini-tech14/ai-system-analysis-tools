@@ -1,52 +1,72 @@
 # AI System Analysis Tools
 
-This repository contains tools I’m building to analyze system behavior and explore how AI-generated responses can be evaluated and improved.
+A practicle project to analyze system logs, generate health summaries, and detect anomalies — with a focus on keeping things simple and practical.
 
-The goal is to keep things simple and practical, focusing on real-world use cases like log analysis, incident insights, and basic anomaly detection.
+---
 
 ## Why I’m Building This
 
-With a background in cloud systems and incident management, I’ve spent time debugging production issues and understanding how systems fail.
+With experience in cloud systems and incident debugging, I’ve spent time understanding how systems fail.
 
-At the same time, I’m interested in how AI systems behave — especially how we can evaluate their responses and reliability.
+This project is where that meets my interest in AI — especially how we can evaluate system behavior and responses.
 
-This project is where those two areas come together.
+---
 
-## What’s Included (So Far)
+## What It Does
 
-- Log analysis (errors, warnings, timeouts)
-- Basic system health insights
-- Simple anomaly detection
-- Early exploration of evaluating AI/LLM responses
+* Parses logs (errors, warnings, timeouts)
+* Generates a system health summary
+* Detects basic anomalies
 
-## What I’m Working On Next
+---
 
-- Improving log analysis with better pattern detection
-- Adding simple anomaly detection
-- Exploring ways to evaluate AI-generated responses
+## How It Runs
 
-## Tech Stack
-
-Python (for now — keeping it simple)
-
-## Notes
-
-This is an evolving project: I’m building it step by step and keeping things as practical as possible.
-
-## 📦 Example Output
-
+```id="y9s3wd"
+Logs → Analyzer → Summary → Anomaly Detection
 ```
+
+* Runs locally with Python
+* Dockerized for consistency
+* Includes a simple CI pipeline (GitHub Actions + pytest)
+
+---
+
+## Run Locally
+
+```bash id="k9x2pl"
+python3 main.py
+```
+
+---
+
+## Run with Docker
+
+```bash id="l0w8rt"
+docker build -t ai-system-analysis-tool .
+docker run ai-system-analysis-tool
+```
+
+---
+
+## Example Output
+
+```id="v8m1qz"
 Log Analysis Result:
-Errors: 1
-Warnings: 1
-Timeouts: 1
+{'errors': 1, 'warnings': 1, 'timeouts': 1}
 
 System Summary:
-Status: Minor issues
-Details: 1 errors, 1 warnings, 1 timeouts
-Health Score: 90
+{'status': 'Minor issues', 'details': '1 errors, 1 warnings, 1 timeouts', 'health_score': 90}
 
 Anomaly Detection:
-Status: No major anomalies
-System behavior looks normal
+{'status': 'No major anomalies', 'details': 'System behavior looks normal'}
 ```
+
+---
+
+## Next Steps
+
+* Improve anomaly detection
+* Explore AI-based evaluation
+* Work with more realistic log data
+
