@@ -18,3 +18,12 @@ jobs:
 
       - name: Run container
         run: docker run ai-system-analysis-tool
+
+      - name: Run container and validate output
+        run: |
+          output=$(docker run ai-system-analysis-tool)
+          echo "$output"
+
+          echo "$output" | grep "Log Analysis Result" || exit 1
+          echo "$output" | grep "System Summary" || exit 1
+          echo "$output" | grep "Anomaly Detection" || exit 1
