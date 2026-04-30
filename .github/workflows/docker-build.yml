@@ -15,3 +15,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t ai-system-analysis-tool .
+
+      - name: Run container
+        run: docker run ai-system-analysis-tool
